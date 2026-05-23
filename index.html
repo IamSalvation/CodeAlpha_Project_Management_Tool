@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Project Kanban Board</h1>
+    </div>
+    <div class="input-area">
+        <input type="text" id="taskInput" placeholder="Enter a new task...">
+        <select id="statusSelect">
+            <option value="todo">To Do</option>
+            <option value="inprogress">In Progress</option>
+            <option value="done">Done</option>
+        </select>
+        <button onclick="createTask()">Add Task</button>
+    </div>
+    <div class="board">
+        <div class="column" id="todo">
+            <h2>To Do</h2>
+            <div class="task-list" id="todo-list"></div>
+        </div>
+        <div class="column" id="inprogress">
+            <h2>In Progress</h2>
+            <div class="task-list" id="inprogress-list"></div>
+        </div>
+        <div class="column" id="done">
+            <h2>Done</h2>
+            <div class="task-list" id="done-list"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
